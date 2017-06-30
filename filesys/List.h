@@ -47,11 +47,8 @@ typedef struct item{
     int avaliable;
     int safe;
     Define *p_define;
-    List *define_list;
-    List *type_list;
     List *data_list;
     int data_num;
-    int define_num;
 } Item;
 
 typedef struct table{
@@ -70,6 +67,8 @@ typedef struct bin{
     List *item_list;
 } Bin;
 
+extern List *items_bin;
+
 extern List *build_list(void);
 extern Node *build_node(void);
 extern int free_list(List *);
@@ -83,8 +82,9 @@ extern Node *get_locationByid(List *,long);
 
 extern Node *get_locationBystring(List *, char *);
 
-extern int list_tofile(FILE *, List *);
-extern int file_tolist(FILE *, List *);
+extern int table_tofile(FILE *p_file, Table *p_table);
+extern int define_tofile(FILE *p_file, Define *p_define);
+extern int file_totable(FILE *, List *);
 
 extern int  *set_valueint(int);
 extern double *set_valuefloat(double);
@@ -97,6 +97,13 @@ extern int free_item(Item *);
 extern Define *build_define(void);
 extern int add_define(Define *, char *, char *);
 extern int free_define(Define *);
+
+extern Table *build_table(Define *p_define);
+extern int add_item(Table*, Item *);
+extern int free_table(Table *);
+
+extern void list_init(void);
+extern void list_delinit(void);
 
 
 #endif /* List_h */

@@ -14,5 +14,6 @@
 #include <time.h>
 
 extern long get_id(void);
+extern void init_id(void);
 
 #endif /* ID_h */

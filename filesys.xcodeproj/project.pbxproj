@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073A89061F07AE3E00DA6919 /* Container.c in Sources */ = {isa = PBXBuildFile; fileRef = 073A89041F07AE3E00DA6919 /* Container.c */; };
 		077B60801F066901001D40C4 /* Db.c in Sources */ = {isa = PBXBuildFile; fileRef = 077B607E1F066901001D40C4 /* Db.c */; };
 		07DD47AF1EFE3B0500E42AD7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 07DD47AE1EFE3B0500E42AD7 /* main.c */; };
 		07FA738B1EFF3D9B001A0F2C /* List.c in Sources */ = {isa = PBXBuildFile; fileRef = 07FA73891EFF3D9B001A0F2C /* List.c */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		073A89041F07AE3E00DA6919 /* Container.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Container.c; sourceTree = "<group>"; };
+		073A89051F07AE3E00DA6919 /* Container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
 		077B607E1F066901001D40C4 /* Db.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Db.c; sourceTree = "<group>"; };
 		077B607F1F066901001D40C4 /* Db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Db.h; sourceTree = "<group>"; };
 		077B60811F066A49001D40C4 /* Support.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Support.h; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				07DD47AE1EFE3B0500E42AD7 /* main.c */,
+				073A89041F07AE3E00DA6919 /* Container.c */,
+				073A89051F07AE3E00DA6919 /* Container.h */,
 				077B607E1F066901001D40C4 /* Db.c */,
 				077B607F1F066901001D40C4 /* Db.h */,
 				07FA738F1EFF3E36001A0F2C /* ID.c */,
@@ -144,6 +149,7 @@
 				07FA738E1EFF3DE4001A0F2C /* Debug.c in Sources */,
 				077B60801F066901001D40C4 /* Db.c in Sources */,
 				07DD47AF1EFE3B0500E42AD7 /* main.c in Sources */,
+				073A89061F07AE3E00DA6919 /* Container.c in Sources */,
 				07FA73911EFF3E36001A0F2C /* ID.c in Sources */,
 				07FA738B1EFF3D9B001A0F2C /* List.c in Sources */,
 			);

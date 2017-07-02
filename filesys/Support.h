@@ -10,5 +10,7 @@
 #define Support_h
 
 #include "List.h"
+#include "ID.h"
+#include "Container.h"
 
 #endif /* Support_h */
